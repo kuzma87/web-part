@@ -7384,11 +7384,13 @@ label {
 	margin: 0;
 }
 
+#lotteryModal .close,
 #lotteryFinishedModal .close {
 	color: white;
 }
 
 .lotteryFinishedModal .intro {
+	min-height: 360px;
 	background: url(../images/bg_details.jpg) no-repeat 50%/cover;
 	padding: 70px 30px;
 	color: white;
@@ -7396,8 +7398,7 @@ label {
 	z-index: 1;
 }
 
-.lotteryFinishedModal .intro:before {
-	content: "";
+.lotteryFinishedModal .intro .fader {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -7507,6 +7508,26 @@ label {
 .lottery-details-heading .time-value {
 	font-size: 28px;
 	font-weight: 700;
+}
+
+.lottery-details-note h4 {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.lottery-detail-forms .heading i {
+	font-size: 26px;
+	color: #afc2c4;
+}
+
+.lottery-detail-forms .heading span {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+	background: #fff;
 }
 
 @font-face {

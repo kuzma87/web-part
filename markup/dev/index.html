@@ -76,7 +76,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="box lottery-box">
+					<div class="box lottery-box" data-toggle="modal" data-target="#lotteryModal">
 						<div class="row">
 							<div class="col-md-8 d-flex align-items-center">
 								<div class="lottery-logo">
@@ -253,6 +253,7 @@
 			</button>
 			<div class="lotteryFinishedModal">
 				<div class="intro text-center">
+					<span class="fader"></span>
 					<i class="intro-logo far fa-trophy-alt text-warning mb-4"></i>
 					<h3 class="mb-4">Lottery Finished!</h3>
 					<ul class="intro-details">
@@ -271,9 +272,9 @@
 					</ul>
 				</div>
 				<div class="lottery-details">
-					<div class="lottery-details-heading">
+					<div class="lottery-details-heading mb-4">
 						<div class="row">
-							<div class="col-md-9 d-flex align-items-center mb-4">
+							<div class="col-md-9 d-flex align-items-center">
 								<div class="lottery-logo">
 									<img src="images/bitmap.png" alt="logo">
 								</div>
@@ -339,7 +340,116 @@
 						</div>
 					</div>
 				</div>
-				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade" id="lotteryModal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<div class="lotteryFinishedModal">
+				<div class="intro text-center">
+					
+				</div>
+				<div class="lottery-details">
+					<div class="lottery-details-heading mb-4">
+						<div class="row">
+							<div class="col-md-9 d-flex align-items-center">
+								<div class="lottery-logo">
+									<img src="images/bitmap.png" alt="logo">
+								</div>
+								<div class="lottery-name">CharityLife Breast Cancer Treatment</div>
+							</div>
+							<div class="col-md-3 text-right align-self-center">
+								<div class="time-label">Time Remaining</div>
+								<div class="time-value">2h30m</div>
+							</div>
+						</div>
+					</div>
+					<p class="mb-4">In cancer care, doctors specializing in different areas of cancer treatment—such as surgery, radiation oncology, and medical oncology—work together to create a patient’s overall treatment plan that combines different types of treatments.</p>
+					<div class="lottery-details-list row mb-5">
+						<div class="col-md-3 text-center">
+							<div class="lottery-details-label">
+								<i class="fas fa-ticket-alt mr-2 text-warning"></i>
+								<span>Ticket Price</span>
+							</div>
+							<div class="value">
+								0,0325 ETH
+							</div>
+						</div>
+						<div class="col-md-3 text-center">
+							<div class="lottery-details-label">
+								<i class="fab fa-ethereum mr-2"></i>
+								<span>Current Prize Pool</span>
+							</div>
+							<div class="value">
+								2,442 ETH
+							</div>
+						</div>
+						<div class="col-md-3 text-center">
+							<div class="lottery-details-label">
+								<i class="fab fa-ethereum mr-2  text-primary"></i>
+								<span>Current Donation</span>
+							</div>
+							<div class="value">
+								13,0325 ETH
+							</div>
+						</div>
+						<div class="col-md-3 text-center">
+							<div class="lottery-details-label">
+								<i class="far fa-check-double mr-2"></i>
+								<span>Issued Tickets Qty</span>
+							</div>
+							<div class="value">
+								243
+							</div>
+						</div>
+					</div>
+					<div class="row lottery-detail-forms mb-5">
+						<div class="col-md-6">
+							<div class="heading mb-2">
+								<i class="fas fa-star mr-2"></i>
+								<span>Participate in this lottery</span>
+							</div>
+							<div class="form-group">
+								<label for="inputID">Smart Contract ID</label>
+								<input type="text" class="form-control" id="inputID" aria-describedby="emailHelp" placeholder="Contains 40 symbols, starting with 0x">
+							</div>
+							<button type="submit" class="btn btn-primary btn-copy" data-clipboard-target="#inputID">Copy ID to Clipboard</button>
+						</div>
+						<div class="col-md-6">
+							<div class="heading mb-2">
+								<i class="fas fa-ticket-alt mr-2"></i>
+								<span>Tickets Calculator</span>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="qty">Qty of Tickets to buy</label>
+										<input class="qty form-control" type="number" min="1" data-price="0.325" value="1" class="form-control" id="qty">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="amount">ETH amount to send</label>
+										<input type="text" readonly class="form-control" value="0.325 ETH" id="amount">
+									</div>
+								</div>
+							</div>
+							
+							<button type="button" class="btn btn-outline-primary btn-copy" data-clipboard-target="#amount">Copy Amount to Clipboard</button>
+						</div>
+					</div>
+					<div class="lottery-details-note text-muted">
+						<h4>How to participate?</h4>
+						<p>Just copy the Smart Contract ID stated below and send designated ETH amount to it. Please note that you need to send <b>0,0325 ETH</b> or more, to buy not less than one ticket. Exceeding sum will be returned to your wallet. Use the calculator provided to calculate exact ETH amount for the number of tickets you want to purchase.</p>
+					</div>
+				</div>
 		</div>
 	</div>
 </div>
