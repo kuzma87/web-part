@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <title>Lottery Info</title>
+    <th:block th:include="fragments/include :: head"></th:block>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href="@{'https://fonts.googleapis.com/css?family=Lato:400,700,900'}" rel="stylesheet">
+    <link href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}" rel="stylesheet" media="screen"/>
+    <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet" media="screen"/>
+</head>
+<body>
+
+<div style="width: 86%;">
+    <form name="lottery" class="form-horizontal" id="lotteryForm">
+
+        <div class="form-group">
+            <label for="lotteryName">Name:</label>
+            <input id="lotteryName" type="text" class="form-control"/>
+        </div>
+
+        <div class="form-group">
+            <label for="lotteryDescription">Description:</label>
+            <input id="lotteryDescription" class="form-control" style="width: 17%" />
+        </div>
+
+        <div class="form-group">
+            <label for="fund">Fund Name:</label>
+            <input id="fund" class="form-control" style="width: 17%"/>
+        </div>
+
+        <div class="form-group">
+            <label for="fundDescr">Fund Description:</label>
+            <input id="fundDescr" class="form-control" style="width: 17%"/>
+        </div>
+
+        <div class="form-group">
+            <label for="lotteryPicture">Lottery Picture</label>
+            <input id="lotteryPicture" class="addImageInput" type="file" name="images[]"/>
+        </div>
+
+        <div class="form-group">
+            <label for="fundPicture">Lottery Picture</label>
+            <input id="fundPicture" class="addImageInput" type="file" name="images[]"/>
+        </div>
+
+        <div class="form-group">
+            <label for="timeBeforeRedemption">Time Before Redemption:</label>
+            <input id="timeBeforeRedemption" class="form-control" style="width: 17%"/>
+        </div>
+
+        <div class="form-group">
+            <label for="ticketPrice">Ticket Price:</label>
+            <input id="ticketPrice" class="form-control" style="width: 17%"/>
+        </div>
+
+        <div class="form-group">
+            <label for="ticketCount">Ticket Count:</label>
+            <input id="ticketCount" class="form-control" style="width: 17%"/>
+        </div>
+
+        <div class="form-group">
+            <label for="rates">Redemption Distribution Percentage:</label>
+            <div id="rates">
+                <input id="prizeRate" class="form-control" style="width: 17%"/>
+                <input id="charityRate" class="form-control" style="width: 17%"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="fundAddress">Charity Fund Target ETH Wallet Address:</label>
+            <input id="fundAddress" class="form-control" style="width: 17%"/>
+        </div>
+
+        <div style="margin-top: 10px;">
+            <button id="createLotteryBtn" type="submit" class="btn btn-success">Create</button>
+            <button id="testId" type="button" class="btn btn-warning">Cancel</button>
+        </div>
+    </form>
+</div>
+
+</body>
+<script th:inline="javascript">
+
+    $(function () {
+        $('#createLotteryBtn').on("click", function(event){
+            // $(this).prop("disabled", true);
+            event.preventDefault();
+            uploadImage();
+        });
+    });
+
+    function uploadImage() {
+
+        var data = new FormData();
+        data.append("name", $('#lotteryName').val());
+        data.append("description", $('#lotteryDescription').val());
+        data.append("fundName", $('#fund').val());
+        data.append("fundDescription", $('#fundDescr').val());
+        data.append("duration", $('#timeBeforeRedemption').val());
+        data.append("ticketPrice", $('#ticketPrice').val());
+        data.append("ticketCount", $('#ticketCount').val());
+        data.append("prizePoolRate", $('#prizeRate').val());
+        data.append("fundAddress", $('#fundAddress').val());
+
+        data.append("images[" + 0 + "]", $('#lotteryPicture')[0].files[0]);
+        data.append("images[" + 1 + "]", $('#fundPicture')[0].files[0]);
+
+        $.ajax({
+            url: '/admin/createLottery',
+            type: 'POST',
+            data: data,
+            enctype: 'multipart/form-data',
+            cache: false,
+            processData: false,
+            contentType: false,
+            success: function (data) {
+                var id = data.id;
+                window.location.replace("http://localhost:8883/lotteries/getOne?id=" + id);
+            }
+        });
+    }
+</script>
+</html>

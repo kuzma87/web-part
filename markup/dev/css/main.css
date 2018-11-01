@@ -7619,16 +7619,34 @@ label {
 	margin-bottom: 20px;
 }
 
+.game-box.game-sport {
+	background-image: url("../images/bg-sport.jpg");
+}
+
+.game-box.game-table {
+	background-image: url("../images/bg-table.jpg");
+}
+
+.game-box.game-slot {
+	background-image: url("../images/bg-slot.jpg");
+}
+
+.game-box.game-lotteries {
+	background-image: url("../images/bg-lotteries.jpg");
+}
+
 .game-box .game-name {
 	font-size: 42px;
 	text-shadow: 0 4px 5px rgba(0, 0, 0, .79);
 	font-weight: 700;
+	letter-spacing: 1px;
 }
 
 .game-box .game-name span {
 	display: block;
 	font-size: 18px;
 	font-weight: normal;
+	letter-spacing: 0;
 }
 
 .game-box .btn {

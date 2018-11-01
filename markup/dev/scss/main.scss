@@ -506,14 +506,29 @@ label {
   justify-content: space-between;
   margin-bottom: 20px;
 
+  &.game-sport {
+    background-image: url('../images/bg-sport.jpg');
+  }
+  &.game-table {
+    background-image: url('../images/bg-table.jpg');
+  }
+  &.game-slot {
+    background-image: url('../images/bg-slot.jpg');
+  }
+  &.game-lotteries {
+    background-image: url('../images/bg-lotteries.jpg');
+  }
+
   .game-name {
     font-size: 42px;
     text-shadow: 0 4px 5px rgba(0, 0, 0, 0.79);
     font-weight: 700;
+    letter-spacing: 1px;
     span {
       display: block;
       font-size: 18px;
       font-weight: normal;
+      letter-spacing: 0;
     }
   }
 
