@@ -7188,10 +7188,6 @@ h2 {
 	min-width: 320px;
 }
 
-main {
-	padding-bottom: 20px;
-}
-
 .btn-warning {
 	height: 60px;
 	border-radius: 4px;
@@ -7560,6 +7556,88 @@ label {
 .form-control:disabled,
 .form-control[readonly] {
 	background: #fff;
+}
+
+.hero-games {
+	background: url(../images/hero-2.jpg) no-repeat 50%/cover;
+	text-align: center;
+	color: #fff;
+	font-size: 26px;
+	padding: 65px 0;
+}
+
+.hero-games .heading i {
+	font-size: 80px;
+}
+
+.hero-games .heading h1 {
+	font-size: 60px;
+	margin: 0;
+	text-transform: uppercase;
+	line-height: 1;
+}
+
+.hero-games p {
+	margin-bottom: 2rem;
+}
+
+.hero-games .btn {
+	min-width: 320px;
+}
+
+.partner-list {
+	padding: 20px 0 0;
+	margin: 0;
+	list-style: none;
+}
+
+.partner-list li {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.partner-list img {
+	vertical-align: top;
+	max-width: 100%;
+	height: auto;
+}
+
+.game-box {
+	min-height: 300px;
+	overflow: hidden;
+	background-size: cover;
+	background-position: 50%;
+	padding: 46px;
+	color: #fff;
+	border-radius: 10px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.game-box .game-name {
+	font-size: 42px;
+	text-shadow: 0 4px 5px rgba(0, 0, 0, .79);
+	font-weight: 700;
+}
+
+.game-box .game-name span {
+	display: block;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.game-box .btn {
+	border-width: 3px;
+	border-radius: 4px;
+	text-transform: uppercase;
+	font-size: 24px;
+	width: 267px;
+	font-weight: 700;
 }
 
 @font-face {
