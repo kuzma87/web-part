@@ -7122,10 +7122,15 @@ body {
 	margin-right: 65px;
 	border-bottom: 4px solid transparent;
 	color: #fff;
+	transition: color .3s;
 }
 
 .navigation li.active {
 	border-bottom: 4px solid #ffa500;
+	color: #ffa500;
+}
+
+.navigation li:hover {
 	color: #ffa500;
 }
 
@@ -7147,6 +7152,11 @@ body {
 	font-weight: 700;
 	color: #fff;
 	cursor: pointer;
+	transition: color .3s;
+}
+
+.btn-check:hover {
+	color: #ffa500;
 }
 
 h2 {
@@ -7190,6 +7200,11 @@ main {
 	font-size: 24px;
 	color: #171717;
 	cursor: pointer;
+	transition: all .3s;
+}
+
+.btn-warning:hover {
+	background: #ffd100;
 }
 
 .sidebar {
@@ -7252,6 +7267,23 @@ main {
 
 .box.lottery-box {
 	padding: 20px;
+	position: relative;
+}
+
+.box.lottery-box:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 3px;
+	top: 0;
+	bottom: 0;
+	background: #3502d0;
+	opacity: 0;
+	transition: opacity .3s;
+}
+
+.box.lottery-box:hover:before {
+	opacity: 1;
 }
 
 .lottery-box {
