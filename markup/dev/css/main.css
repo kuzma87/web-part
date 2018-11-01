@@ -7658,6 +7658,43 @@ label {
 	font-weight: 700;
 }
 
+#login {
+	display: block;
+}
+
+#login .modal-content {
+	box-shadow: 0 12px 50px 0 rgba(0, 0, 0, .12);
+	background-color: #fdfdfd;
+	border: none;
+}
+
+#login .login {
+	padding: 40px;
+	text-align: center;
+}
+
+#login .login-form {
+	text-align: left;
+}
+
+#login h3,
+#login p {
+	margin-bottom: 1.5rem;
+}
+
+.panel-name {
+	text-transform: uppercase;
+	color: white;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.add-link {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 700;
+}
+
 @font-face {
 	font-family: "Font Awesome 5 Brands";
 	font-style: normal;
