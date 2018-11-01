@@ -1,0 +1,30 @@
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, 'Lato', "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$red: #ff3d42;
+$black: #171717;
+$blue: #3502d0;
+$yellow: #f5a623;
+$body-color: $black;
+$gray-100: #f7f7f7;
+$grid-columns: 12;
+$grid-gutter-width: 40px;
+$modal-lg: 1000px;
+
+$font-size-base: 1.13rem;
+$line-height-base: 1.5;
+$h2-font-size: 3rem;
+$h3-font-size: 1.5rem;
+
+$input-border-color: #979797;
+$input-border-radius: 0;
+$btn-border-radius: 0;
+
+$input-btn-padding-y: .56rem;
+$input-btn-padding-x: 1rem;
+$btn-padding-x: 1.5rem;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1054px
+) !default;

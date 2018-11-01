@@ -1,0 +1,279 @@
+@import 'vendors/font-awesome';
+@import "bootstrap_override";
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+//@import "../../../node_modules/bootstrap/scss/utilities";
+
+@import 'base/functions';
+@import 'base/mixins';
+
+
+* {outline: none !important;}
+
+body {
+  min-width: 320px;
+}
+
+#header {
+  box-shadow: 0 12px 50px 0 rgba(0, 0, 0, 0.12);
+  background-image: linear-gradient(to bottom, #6814a0, #640de0);
+  height: 100px;
+}
+
+.btn {
+  font-size: 20px;
+}
+.navigation {
+  margin: 0 0 0 auto;
+  text-transform: uppercase;
+  font-size: 24px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  li{
+    margin-right: 65px;
+    border-bottom: 4px solid transparent;
+    color: #fff;
+    &.active {
+      border-bottom: 4px solid #ffa500;
+      color: #ffa500;
+    }
+  }
+  a{
+    color: inherit;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.btn-check {
+  width: 320px;
+  height: 60px;
+  border-radius: 4px;
+  border: solid 4px #f5a623;
+  background: none;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
+
+h2{ 
+  color: #171717;
+  font-size: 32px;
+  margin: 0 0 1.5rem;
+  font-weight: 900;
+}
+
+.hero {
+  background: url(../images/hero.jpg) no-repeat 50%/cover;
+  text-align: center;
+  font-size: 26px;
+  color: #fff;
+  padding: 45px 0;
+  .hero-logo {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 2rem;
+  }
+  p{
+    margin: 0 0 2rem;
+  }
+  .btn-warning {
+    min-width: 320px;
+  }
+}
+
+main {
+  padding-bottom: 20px;
+}
+
+.btn-warning {
+  height: 60px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.21);
+  background-image: linear-gradient(to bottom, #ffd100, #ffa400);
+  font-size: 24px;
+  color: $black;
+  cursor: pointer;
+}
+
+.sidebar {
+  padding-right: 0;
+  .box {
+    height: 100%;
+    padding: 40px 25px 25px;
+  }
+}
+
+.box {
+  box-shadow: 0 12px 50px 0 rgba(0, 0, 0, 0.12);
+  background-color: #fdfdfd;
+  padding: 20px;
+}
+
+
+.payout-list {
+  margin: 0;
+  padding: 0;
+  color: #9b9b9b;
+  font-size: 18px;
+  li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .last {
+    margin-left: auto;
+    font-size: 16px;
+  }
+  b{
+    color: $black;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  .currency {
+    margin-right: 10px;
+    font-size: 28px;
+  }
+  span {
+    margin-right: 10px;
+  }
+}
+
+.main-column {
+  padding-top: 50px;
+}
+
+.lottery-boxes {
+  padding-bottom: 25px;
+}
+
+.box.lottery-box {
+  padding: 20px;
+}
+
+.lottery-box {
+  margin-bottom: 10px;
+  cursor: pointer;
+
+  .lottery-heading {
+    display: flex;
+    align-items: center;
+    i{
+      font-size: 26px;
+      margin-right: 10px;
+      color: $yellow;
+    }
+  }
+
+  .lottery-logo {
+    width: 70px;
+    margin-right: 15px;
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .lottery-name {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .time-value {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .finish-value {
+    font-size: 28px;
+  }
+
+  .icon-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    li {
+      display: flex;
+      align-items: center;
+      margin-right: 15px;
+    }
+
+    .icon-list-icon {
+      margin-right: 10px;
+      font-size: 26px;
+      color: #afc2c4;
+    }
+
+  }
+}
+
+// about
+.modal-content {
+  border-radius: 0 !important;
+}
+.about-image {
+  background: url(../images/depositphotos-62104453-l-2015.jpg) no-repeat 50% / cover;
+}
+
+.about-content {
+  padding: 45px 60px;
+  .about-logo {
+    display: block;
+    margin: 0 auto 2rem;
+  }
+  p{
+    margin-bottom: 2rem;
+  }
+}
+
+.modal {
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    color: $black;
+    font-size: 36px;
+    z-index: 2;
+    opacity: 1;
+    text-shadow: none;
+    line-height: 1;
+  }
+}
+
+.contact-form {
+  label {
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+
+  .form-control {
+    font-size: 16px;
+    color: $black;
+  }
+}
+
+label {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+// checkModal
+.checkModal {
+  padding: 40px;
+  i{
+    font-size: 56px;
+  }
+  h3 {
+    font-size: 32px;
+    margin: 0;
+  }
+}

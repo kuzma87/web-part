@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MBH</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+	<link media="all" rel="stylesheet" href="css/bootstrap.css">
+	<link media="all" rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header id="header" class="container-fluid d-flex align-items-center">
+		<a href="#" class="logo">
+			<img src="images/logo.svg" alt="Logo">
+		</a>
+		<ul class="navigation">
+			<li class="active"><a href="#">Lotteries</a></li>
+			<li><a href="#">Games</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#aboutModal">About Us</a></li>
+		</ul>
+		<button data-toggle="modal" data-target="#checkModal" class="btn-check">
+			Check my Lotteries
+		</button>
+	</header>
+	
+	<div class="hero">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6">
+					<img class="hero-logo" src="images/logo2.svg" alt="Logo">
+					<p>Blockchain lottery service  for charity funds around the world</p>
+					<button data-toggle="modal" data-target="#aboutModal" class="btn btn-warning">Learn More</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<main class="container-fluid">
+		<div class="row">
+			<div class="col-md-8 main-column">
+				<h2>Active Lotteries</h2>
+				<div class="lottery-boxes">
+					<div class="box lottery-box">
+						<div class="row">
+							<div class="col-md-8 d-flex align-items-center">
+								<div class="lottery-logo">
+									<img src="images/bitmap.png" alt="logo">
+								</div>
+								<div class="lottery-descr">
+									<div class="lottery-heading">
+										<div class="lottery-name">CharityLife Breast Cancer Treatment</div>
+									</div>
+									<ul class="icon-list">
+										<li>
+											<i class="icon-list-icon fas fa-ticket-alt text-warning"></i>
+											<span>0,0325</span>
+										</li>
+										<li>
+											<i class="icon-list-icon fab fa-ethereum"></i>
+											<span>0,0325</span>
+										</li>
+										<li>
+											<i class="icon-list-icon fab fa-ethereum text-primary"></i>
+											<span>0,0325</span>
+										</li>
+										<li>
+											<i class="icon-list-icon far fa-check-double"></i>
+											<span>0,0325</span>
+										</li>
+									</ul>
+								</div>
+								<div class="lottery-name"></div>
+							</div>
+							<div class="col-md-4 text-right">
+								<div class="time-label">Time Remaining</div>
+								<div class="time-value">42s</div>
+							</div>
+						</div>
+					</div>
+					<div class="box lottery-box">
+						<div class="row">
+							<div class="col-md-8 d-flex align-items-center">
+								<div class="lottery-logo">
+									<img src="images/bitmap.png" alt="logo">
+								</div>
+								<div class="lottery-descr">
+									<div class="lottery-heading">
+										<div class="lottery-name">CharityLife Breast Cancer Treatment</div>
+									</div>
+									<ul class="icon-list">
+										<li>
+											<i class="icon-list-icon fas fa-ticket-alt text-warning"></i>
+											<span>0,0325</span>
+										</li>
+										<li>
+											<i class="icon-list-icon fab fa-ethereum"></i>
+											<span>0,0325</span>
+										</li>
+										<li>
+											<i class="icon-list-icon fab fa-ethereum text-primary"></i>
+											<span>0,0325</span>
+										</li>
+										<li>
+											<i class="icon-list-icon far fa-check-double"></i>
+											<span>0,0325</span>
+										</li>
+									</ul>
+								</div>
+								<div class="lottery-name"></div>
+							</div>
+							<div class="col-md-4 text-right">
+								<div class="time-label">Time Remaining</div>
+								<div class="time-value">42s</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<h2>Finished Lotteries</h2>
+				<div class="lottery-boxes">
+					<div class="box lottery-box bg-light" data-toggle="modal" data-target="#lotteryFinishedModal">
+						<div class="row">
+							<div class="col-md-8 d-flex align-items-center">
+								<div class="lottery-logo">
+									<img src="images/bitmap.png" alt="logo">
+								</div>
+								<div class="lottery-descr">
+									<div class="lottery-heading">
+										<i class="fas fa-trophy-alt"></i>
+										<div class="lottery-name">CharityLife Breast Cancer Treatment</div>
+									</div>
+									<ul class="icon-list">
+										<li>
+											<i class="icon-list-icon fas fa-ticket-alt text-warning"></i>
+											<span>0,0325</span>
+										</li>
+										<li>
+											<i class="icon-list-icon fab fa-ethereum"></i>
+											<span>0,0325</span>
+										</li>
+										<li>
+											<i class="icon-list-icon fab fa-ethereum text-primary"></i>
+											<span>0,0325</span>
+										</li>
+										<li>
+											<i class="icon-list-icon far fa-check-double"></i>
+											<span>0,0325</span>
+										</li>
+									</ul>
+								</div>
+								<div class="lottery-name"></div>
+							</div>
+							<div class="col-md-4 text-right align-self-center">
+								<div class="finish-value text-warning">+ 2,4425 ETH</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 sidebar">
+				<div class="box">
+					<h2>Recent Payouts</h2>
+					<ul class="payout-list">
+						<li>
+							<i class="currency text-primary fab fa-ethereum"></i>
+							<b>142,4425</b>
+							<span>to AD Vita Europe</span>
+							<i class="last text-primary fal fa-link"></i>
+						</li>
+						<li>
+							<i class="currency text-primary fab fa-ethereum"></i>
+							<b>142,4425</b>
+							<span>to AD Vita Europe</span>
+							<i class="last text-primary fal fa-link"></i>
+						</li>
+						<li>
+							<i class="currency text-primary fab fa-ethereum"></i>
+							<b>142,4425</b>
+							<span>to AD Vita Europe</span>
+							<i class="last text-primary fal fa-link"></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+
+<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			
+			<div class="row no-gutters">
+				<div class="col-md-5">
+					<div class="about-content">
+						<img class="about-logo" src="images/logo3.png" alt="Logo">
+						<p>Charity lottery service for global charity funds, which helps them gather etherium for their patroned institutions.</p>
+						<form action="#" class="contact-form">
+							<h3>Please contact us!</h3>
+							<div class="form-group">
+								<label for="inputName">Name</label>
+								<input type="text" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="Enter name">
+							</div>
+							<div class="form-group">
+								<label for="inputEmail">E-mail</label>
+								<input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+							</div>
+							<div class="form-group">
+								<label for="inputMessage">Message (optional)</label>
+								<textarea class="form-control" id="inputMessage" rows="3"></textarea>
+							</div>
+							<button type="submit" class="btn btn-block btn-primary">Send</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-7 about-image">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="checkModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<div class="modal-body checkModal">
+				<div class="d-flex align-items-center mb-4">
+					<i class="fas fa-ticket-alt text-warning mr-3"></i>
+					<h3>Check My Lottery Tickets</h3>
+				</div>
+				<p class="mb-4">Use the input form below to enter the Wallet ID you made payments from. This will allow you to quickly see the list of all the lotteries you participated in and check if you won or lost in them.</p>
+				<form action="#">
+					<div class="form-group">
+						<label for="inputName">Enter my Wallet ID:</label>
+						<input type="text" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="Contains 40 symbols, starting with 0x">
+					</div>
+					<button type="submit" class="btn btn-primary">Check Tickets</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade" id="lotteryFinishedModal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<div class="modal-body lotteryFinishedModal">
+				<div class="intro">
+					<i class="fas fa-trophy-alt"></i>
+					<h3>Lottery Finished!</h3>
+					<ul class="intro-details">
+						<li>
+							<p>Final Prize Pool</p>
+							<span class="text-warning">2,442 ETH</span>
+						</li>
+						<li>
+							<p>Tickets Sold</p>
+							<span></span>
+						</li>
+						<li>
+							<p>Final Donation</p>
+							<span class="text-warning">13,0325 ETH</span>
+						</li>
+					</ul>
+				</div>
+		</div>
+	</div>
+</div>
+
+	<script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script defer src="js/jquery.main.js"></script>
+</body>
+</html>
