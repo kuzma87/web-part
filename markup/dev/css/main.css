@@ -7384,6 +7384,131 @@ label {
 	margin: 0;
 }
 
+#lotteryFinishedModal .close {
+	color: white;
+}
+
+.lotteryFinishedModal .intro {
+	background: url(../images/bg_details.jpg) no-repeat 50%/cover;
+	padding: 70px 30px;
+	color: white;
+	position: relative;
+	z-index: 1;
+}
+
+.lotteryFinishedModal .intro:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .63);
+	z-index: -1;
+}
+
+.lotteryFinishedModal .intro-logo {
+	font-size: 72px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.lotteryFinishedModal h3 {
+	font-size: 32px;
+}
+
+.intro-details {
+	padding: 0;
+	margin: 0;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+	font-size: 16px;
+	list-style: none;
+	font-weight: 700;
+}
+
+.intro-details li {
+	padding: 0 30px;
+	text-align: center;
+}
+
+.intro-details p {
+	margin: 0;
+}
+
+.intro-details span {
+	font-size: 27px;
+	text-transform: uppercase;
+}
+
+.transaction {
+	box-shadow: 0 12px 50px 0 rgba(0, 0, 0, .12);
+	background-image: linear-gradient(to bottom, #6814a0, #640de0);
+	color: #fff;
+	font-size: 16px;
+	padding: 17px 0;
+}
+
+.transaction p {
+	margin: 0;
+}
+
+.transaction a {
+	color: inherit;
+}
+
+.lottery-details {
+	padding: 40px;
+}
+
+.lottery-details-list i {
+	color: #afc2c4;
+	font-size: 26px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.lottery-details-list .lottery-details-label {
+	border-bottom: 3px solid #afc2c4;
+	padding-bottom: 10px;
+	margin-bottom: 7px;
+}
+
+.lottery-details-list .lottery-details-label span {
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.lottery-details-list .value {
+	font-weight: 700;
+}
+
+.lottery-details-heading .lottery-logo {
+	width: 70px;
+	margin-right: 10px;
+}
+
+.lottery-details-heading .lottery-logo img {
+	max-width: 100%;
+	height: auto;
+}
+
+.lottery-details-heading .lottery-name {
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.lottery-details-heading .time-label {
+	font-size: 16px;
+}
+
+.lottery-details-heading .time-value {
+	font-size: 28px;
+	font-weight: 700;
+}
+
 @font-face {
 	font-family: "Font Awesome 5 Brands";
 	font-style: normal;
