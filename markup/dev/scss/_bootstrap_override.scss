@@ -24,11 +24,24 @@ $input-btn-padding-y: .56rem;
 $input-btn-padding-x: 1rem;
 $btn-padding-x: 1.5rem;
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1360px
+);
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
 $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1054px
-) !default;
+  xl: 1300px
+);
 
 $body-bg: #f1f1f1;

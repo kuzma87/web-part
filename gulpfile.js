@@ -128,7 +128,7 @@ gulp.task('build:js', function(){
 		'./markup/dev/js/*.js',
 		'!./markup/dev/js/*.min.js'
 	])
-	.pipe(uglify())
+	//.pipe(uglify())
 	.pipe(gulp.dest('./markup/build/js/'));
 });
 
